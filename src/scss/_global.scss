@@ -1,10 +1,10 @@
-// 
+//
 // Global
-// 
+//
 
 // Scroll padding for all scroll targets on page used with
 // native CSS smooth scrolling
-// 
+//
 // https://caniuse.com/?search=scroll-padding
 
 html {
@@ -27,4 +27,8 @@ html {
             line-height: 2.5rem;
         }
     }
+}
+
+.technologies {
+  margin-top: 3rem;
 }

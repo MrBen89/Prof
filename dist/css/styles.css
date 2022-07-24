@@ -11306,6 +11306,10 @@ html {
   }
 }
 
+.technologies {
+  margin-top: 3rem;
+}
+
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
@@ -11479,6 +11483,14 @@ html {
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+
+.technologies .tech-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .portfolio-modal .btn-close {

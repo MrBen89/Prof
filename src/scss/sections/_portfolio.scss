@@ -1,6 +1,6 @@
-// 
+//
 // Portfolio
-// 
+//
 
 .portfolio {
     .portfolio-item {
@@ -27,6 +27,16 @@
                 font-size: 1.5rem;
             }
         }
+    }
+}
+
+.technologies {
+    .tech-item {
+        position: relative;
+        display: block;
+        max-width: 25rem;
+        border-radius: $border-radius;
+        overflow: hidden;
     }
 }
 

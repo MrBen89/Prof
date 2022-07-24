@@ -5,39 +5,41 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='The Portfolio page of B.R. Pearson, Web developer.')
+        meta(name='author', content='B.R. Pearson')
 
-        title Freelancer - Start Bootstrap Theme
+        title B.R. Pearson Portfolio
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
+        script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous', defer)
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css', defer)
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css', defer)
 
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='css/styles.css', rel='stylesheet', defer)
 
     body#page-top
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') B.R. Pearson
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu 
+                    | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                        li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#tech') Technologies
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
 
@@ -45,9 +47,9 @@ html(lang='en')
         header.masthead.bg-primary.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
+                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='avatar')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 B.R. Pearson
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -55,15 +57,38 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Web Developer - Retro Enthusiast
 
-        // Portfolio Section
-        section#portfolio.page-section.portfolio
+
+
+        // About Section
+        section#about.page-section
             .container
-                // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+                // About Section Heading
+                h2.page-section-heading.text-center.text-secondary.text-uppercase About
                 // Icon Divider
                 .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // About Section Content
+                .row
+                    .col-lg-4.ms-auto
+                        p.lead
+                            | Hi, I'm Ben and I'm a web developer.
+                    .col-lg-4.me-auto
+                        p.lead
+                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+
+
+        // Portfolio Section
+        section#portfolio.page-section.portfolio.bg-primary.text-white.mb-0
+            .container
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white.mb-0 Portfolio
+                // Icon Divider
+                .divider-custom.divider-light
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
@@ -91,60 +116,55 @@ html(lang='en')
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
                             img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
-                    // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
 
-        // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
+
+        // Tech Section
+        section#tech.page-section.portfolio.mb-0
             .container
-                // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
+                // Tech Section Heading
+                h2.page-section-heading.text-center.text-uppercase.mb-0 Technologies
                 // Icon Divider
-                .divider-custom.divider-light
+                .divider-custom
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                // About Section Content
-                .row
-                    .col-lg-4.ms-auto
-                        p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-                    .col-lg-4.me-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                // Technologies Grid Items
+                .row.justify-content-center
+                    // Tech Item 1
+                    .col-md-6.col-lg-4.mb-5
+                        .tech-item
+                            img.img-fluid(src='assets/img/portfolio/js.png', alt='JS CSS HTML')
+                    // Tech Item 2
+                    .col-md-6.col-lg-4.mb-5
+                        .tech-item
+                            img.img-fluid(src='assets/img/portfolio/nodejs.png', alt='NodeJS')
+                    // Tech Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .tech-item
+                            img.img-fluid(src='assets/img/portfolio/react.png', alt='React')
+                    // Tech Item 4
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .tech-item
+                            img.img-fluid(src='assets/img/portfolio/mysql.png', alt='MySQL')
+                    // Tech Item 5
+                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                        .tech-item
+                            img.img-fluid(src='assets/img/portfolio/mongodb.png', alt='MongoDB')
+                    // Tech Item 6
+                    .col-md-6.col-lg-4
+                        .tech-item
+                            img.img-fluid(src='assets/img/portfolio/typescript.png', alt='Typescript')
+
+
 
         // Contact Section
-        section#contact.page-section
+        section#contact.page-section.contact.bg-primary.text-white.mb-0
             .container
                 // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                h2.page-section-heading.text-center.text-uppercase.text-white.mb-0 Contact Me
                 // Icon Divider
-                .divider-custom
+                .divider-custom.divider-light
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
@@ -224,15 +244,14 @@ html(lang='en')
                                     a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
                             // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
 
                             #submitErrorMessage.d-none
                                 .text-center.text-danger.mb-3 Error sending message!
 
                             // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                            button#submitButton.btn.btn-secondary.btn-xl(type='submit') Send
+
+
 
         // Footer
         footer.footer.text-center
@@ -240,34 +259,33 @@ html(lang='en')
                 .row
                     // Footer Location
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Location
+                        h3.text-uppercase.mb-4 Location
                         p.lead.mb-0
-                            | 2215 John Daniel Drive
+                            | 北佐久郡御代田町
                             br
-                            | Clark, MO 65243
+                            | 長野県
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        h3.text-uppercase.mb-4 Around the Web
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/MrBen89', aria-label="Github")
+                            i.fab.fa-fw.fa-github
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!', aria-label="Github")
                             i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!', aria-label="Github")
                             i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='http://www.brp-english.com/en/', aria-label="Github")
                             i.fab.fa-fw.fa-dribbble
                     // Footer About Text
                     .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
+                        h3.text-uppercase.mb-4 About This Page
                         p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                            |   This page was built using the bootstrap theme "Freelance".
+                            |
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Your Website 2022
+                small Copyright &copy; Ben Pearson 2022
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
