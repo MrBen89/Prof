@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "description": "My Portfolio.",
     "keywords": [
         "css",
         "sass",
@@ -23,11 +23,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/freelancer",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-freelancer/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://www.brpportfolio.com/",
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
@@ -35,7 +31,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-freelancer.git"
+        "url": "https://github.com/MrBen89/Prof.git"
     },
     "dependencies": {
         "bootstrap": "5.1.3"
