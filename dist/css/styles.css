@@ -11357,6 +11357,18 @@ html {
   align-items: center;
 }
 
+.btn-link {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  border-color: blue;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;

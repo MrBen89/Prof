@@ -1,6 +1,6 @@
-// 
+//
 // Buttons
-// 
+//
 
 // Custom extra large button size
 .btn-xl {
@@ -17,4 +17,17 @@
     font-size: 1.25rem;
     justify-content: center;
     align-items: center;
+}
+
+// Custom Link buttons
+.btn-link {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    border-color: blue;
 }
